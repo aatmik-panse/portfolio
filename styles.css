@@ -1,0 +1,399 @@
+*{
+    border-radius: 30px;
+}
+body, html {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #0F4C75;
+    background-color: #0f1321;
+    display: flex;
+}
+#left{
+    margin-left: 5px;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    background-color: #161827;
+    width: 5.8vw;
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+}
+aside section{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: #161827;
+    margin: 2px auto;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    container: gap;
+}
+.icons {
+    /*margin: 2px auto;*/
+    /*padding: 2px;*/
+    width: 100%; /* Set width to 100% to ensure it fits within the parent */
+    height: auto; /* Allow the height to adjust proportionally */
+    background-size: contain;
+    background-position: center;
+    background-blend-mode: screen;
+    cursor: pointer;
+    /*transition:background-color linear .3s;*/
+
+}
+.icons:hover{
+    /*background-color: #8ba9b8;*/
+    border-radius: 30%;
+    filter: invert(88%) sepia(21%) saturate(935%) hue-rotate(123deg) brightness(85%) contrast(97%);
+    /*fill: white;*/
+    /*-webkit-mask:url(svg/leet.svg) no-repeat center;*/
+    /*mask:url(svg/leet.svg) no-repeat center;*/
+}
+main{
+    width: 68.75vw;
+    margin-left: 5px;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    background-color:#161827 ;
+    height: 100vh;
+    align-content: center;
+    justify-content: flex-start;
+}
+main nav{
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3% ;
+    margin-left: 4%;
+    width: 47%;
+    height: 7vh;
+    background-color: #353948;
+    border-radius: 60px;
+
+}
+.top-buttons{
+    margin: 2px auto;
+    width: 98%;
+    height: 95%;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+}
+.inside-buttons{
+    display: flex;
+    width: 24%;
+    height: 85%;
+    background-color: #434756;
+    align-items: center;
+    justify-content: center;
+    margin: 2px auto;
+}
+.top-buttons a{
+    text-decoration: unset ;
+    color: #b0bbc8;
+}
+article{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+.about{
+    margin-left: 4% ;
+    margin-top: 4% ;
+    height: 90%;
+    width:49%;
+    background-color: #161827;
+}
+#title{
+    padding: 5%;
+    color: white;
+    width: 100%;
+}
+#bg-image{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin: 3px 3px;
+    padding: 3px;
+    background: url("svg/Web_Photo_Editor.jpg");
+    width: 100%;
+    height:88%;
+    background-size: cover;
+}
+#on-top-box{
+    margin-bottom: 3%;
+    padding: 1px;
+    background-color: #161827;
+    width: 94%;
+    height:30%;
+    background-size: cover;
+    background-position: center;
+}
+#right-side-of-main{
+    /*transform: translateY(-12px);*/
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+    margin-left: 4% ;
+    margin-top: 4% ;
+    height: 90%;
+    width:38.5%;
+    background-color: #161827;
+    display: flex;
+    flex-direction: column;
+}
+#text-right-top{
+    margin-bottom: 3%;
+    padding: 1px;
+    width: 94%;
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+#first-box{
+    margin-bottom: 3%;
+    padding: 1px;
+    background-color: #93d5e1;
+    width: 94%;
+    height:44%;
+    background-size: cover;
+    background-position: center;
+}
+#second-box{
+    margin-top: 4%;
+    /*margin-bottom: 3%;*/
+    padding: 1px;
+    background-color: #bec2d1;
+    width: 94%;
+    height:44%;
+    background-size: cover;
+    background-position: center;
+}
+#right-most{
+    margin-left: 5px;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    background-color: #161827;
+    color: #93d5e1;
+    width: 24vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#right-most .calendar{
+    border: white 2px solid;
+    width: 90%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+    background:skyblue ;
+    /*background-color: red;*/
+    /*border-radius: 20px;*/
+    box-shadow: 0 0 0 rgb(0,0,0,.3);
+    color: #b0bbc8;
+}
+.head{
+    display: flex;
+     justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+}
+.head button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: white;
+    height: 30px;
+    width: 30px;
+    box-shadow: 0 0 2px rgb(0,0,0,0.2) ;
+
+
+}
+.days{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    padding: 2px;
+}
+.day{
+    text-align: center;
+    padding: 3px;
+    font-weight: 200;
+    color: lightgrey;
+}
+.dates{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 1px;
+}
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1px;
+    margin: auto;
+    cursor: pointer;
+    font-weight:300;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transition: 0.2s;
+}
+
+.date:hover,
+.date.active {
+    background: indianred;
+    color: white;
+}
+.date.inactive {
+    color: #d2d2d2;
+}
+.date.inactive:hover {
+    color: white;
+}
+.monthYear{
+    text-align:center;
+    font-weight:600;
+    width: 150px;
+}
+.cal{
+    border: #353948 2px solid;
+    background-color: #191b28;
+    height: auto;
+    width: 20vw;
+    padding: 12px;
+}
+#profile-head{
+    margin-top: 15vh;
+    margin-bottom: 3vh;
+    border: #353948 2px solid;
+    background-color: #191b28;
+    height: auto;
+    width: 20vw;
+    padding: 12px;
+    /*margin: 20px;*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#dp{
+    padding: 3px;
+    margin: 5px;
+    border: white 3px solid;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    background-image: url("svg/Web_Photo_Editor.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#profile-name{
+    margin: 3px;
+    text-align: center;
+    /*padding: 3%;*/
+
+}
+#profile-name p{
+    text-align: center;
+    margin: 0;
+}
+#admin-icon{
+    padding: 1px;
+    margin: 9px;
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    background-image: url("svg/moon-6691.svg");
+    background-color: white;
+    background-position:center;
+    background-size: 33px ;
+    background-repeat: no-repeat;
+}
+
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (min-resolution: 192dpi) {
+}
+
+/* Existing CSS for larger screens remains unchanged */
+
+/* Responsive styles for mobile devices */
+@media screen and (max-width: 768px) {
+    main {
+        width: 100vw; /* Full width on mobile */
+        margin-left: 0; /* Remove margin */
+        height: auto; /* Adjust height for content */
+    }
+
+    main nav {
+        width: 100%; /* Full width */
+        margin-top: 2%; /* Adjust margin */
+        margin-left: 0; /* Align left */
+        height: auto; /* Adjust height */
+        font-size: 4vw; /* Responsive font size */
+    }
+
+    .top-buttons, .inside-buttons {
+        width: 100%; /* Full width */
+        margin: 1vw auto; /* Adjust margin */
+        height: auto; /* Adjust height */
+    }
+
+    .inside-buttons {
+        width: 30%; /* Adjust button width */
+        font-size: 3.5vw; /* Adjust font size */
+    }
+
+    article {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .about, #right-side-of-main {
+        width: 90%; /* Adjust width */
+        margin-left: 5%; /* Center align */
+        margin-top: 2%; /* Adjust margin top */
+        height: auto; /* Adjust height */
+    }
+
+    #title, #text-right-top, #first-box, #second-box {
+        padding: 5%; /* Increase padding */
+        font-size: 4vw; /* Increase font size */
+    }
+    #on-top-box {
+        width: 80%; /* Adjust width to be responsive */
+        margin: 0 auto; /* Center the box */
+        height: 10vh; /* Make height automatic to adjust based on content */
+        padding: 5%; /* Increase padding for better spacing */
+        font-size: 4vw; /* Adjust font size to be responsive */
+        /* Adjust other properties as needed for responsiveness */
+    }
+
+    #bg-image {
+        height: 50vh; /* Adjust image box height */
+    }
+
+    /* Additional style adjustments as needed */
+}
